@@ -1,78 +1,57 @@
-
-//function to toggle between the icons and the text
 $(document).ready(function(){
-    
-    $(".btn_1").click(function(){ 
-        $("p.par_1").show();
-        $(".btn_1").hide(); 
+    $(".design").click(function(){
+      $(".design").hide(1200);
+      $(".p1").toggle(1200);
+      $(".p1").show(1200);
+    })
+    $(".p1").click(function(){
+      $(".p1").hide(1200);
+      $(".design").toggle(1200);
+      $(".design").show(1200);
     });
-    $("p.par_1").click(function(){
-        $("p.par_1").hide();
-        $(".btn_1").show(); 
-    });
-     $(".btn_2").click(function(){
-         $("p.par_2").show();   
-         $(".btn_2").hide();
-     });
-     $("p.par_2").click(function(){
-         $("p.par_2").hide();
-         $(".btn_2").show();
-     });
-     $(".btn_3").click(function(){
-         $("p.par_3").show();   
-         $(".btn_3").hide();
-     });
-     $("p.par_3").click(function(){
-         $(".btn_3").show();
-         $("p.par_3").hide();
-     }); 
   });
- 
-
-$(document).ready(function(){
-    $("form").submit(function(){
-        event.preventDefault();
-            var name = $('#inputName').val;
-            var email = $('#inputEmail').val;
-            var message = $('#inputMessage').val
-          if (!name.value || !email.value || !message.value){
-              alert('Please check your entries');
-          } else{
-              event.preventDefault();
-              $(this).get(0).reset();
-              alert("successful submission");
+  $(document).ready(function(){
+      $(".development").click(function(){
+        $(".development").hide(1200);
+        $(".p2").toggle(1200);
+        $(".p2").show(1200);
+      })
+      $(".p2").click(function(){
+        $(".p2").hide(1200);
+        $(".development").toggle(1200);
+        $(".development").show(1200);
+      });
+  });
+  $(document).ready(function(){
+      $(".product").click(function(){
+        $(".product").hide(1200);
+        $(".p3").toggle(1200);
+        $(".p3").show(1200);
+      })
+      $(".p3").click(function(){
+        $(".p3").hide(1200);
+        $(".product").toggle(1200);
+        $(".product").show(1200);
+      });
+  });
+  $(document).ready(function(){
+      $('.text').hover(function () {
+      $(this).animate({opacity:'1'});
+      },
+      function () {
+      $(this).animate({opacity:'0'});
+  })
+  });
+  $(document).ready(function(){
+      $('#mc-embedded-subscribe-form').submit(function(event){
+          var userName = $('input#mce-NAME').val();
+          var email = $('input#mce-EMAIL').val();
+          if(userName && email != ''){
+              alert ('Thank you ' + userName + '.' + ' Your subscription is well received');
+          }else {
+              alert ('Please enter your name and email');
           }
-        //  alert("submition");
-       
-    });
-    $(".col-sm-3 .box").hide(500);
-    $(".col-sm-3").hover(function(){
-        $(this).children(".col-sm-3 .box").toggle(500);
-    });
-
-});
-
-
-// function for the email validation
-
-//  $(document).ready(function(){
-//          $(".submit").click(fuction(){
-//                    event.preventDefault();
-//                    console.log("Clicked button");
-        
-//                    var email = $("email").val();
-//                    var name = $("name").val();
-//                    var message = $("message").val();
-//                    Var statusElm = $("status");
-        
-//                    if(email.length > 5 && email.include("@") && email.include("."){
-//                        console.log("Email is valid");
-//                    });
-//                     else {
-//                       console.log("Email is not valid");
-//                   }
-//                });
-//        });
-
-
-
+          event.preventDefault();
+      })
+  });
+  

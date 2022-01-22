@@ -3,14 +3,19 @@ body{
     margin: auto;
     box-sizing: border-box;
 }
-.content{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 .h_image{
-    background-image: url("../images/assets/backgrounds/h_img.jpg");
+    background-image: url("https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/backgrounds/h_img.jpg");
     height:700px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
      
 }
 #logo{
