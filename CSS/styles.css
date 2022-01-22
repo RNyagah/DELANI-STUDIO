@@ -3,19 +3,17 @@ body{
     margin: auto;
     box-sizing: border-box;
 }
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.h_image{
+.banner1 {
     background-image: url("https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/backgrounds/h_img.jpg");
+    text-align: center;
     height:700px; 
     position: absolute;
     top: 50%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    color: white;
+
      
 }
 #logo{
