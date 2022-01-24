@@ -1,5 +1,5 @@
-164 lines (155 sloc)  3.46 KB
-   
+
+  
 * {
     box-sizing: border-box;
     margin: 0;
@@ -37,7 +37,7 @@ body{
 }
 
 #services {
-    /* font-size: calc(1vw + 1vh + .5vmin); */
+    
     background-image: url('https://github.com/jonnygovish/IP3/blob/master/assets/backgrounds/s_image.jpg?raw=true');
     color: white;
     padding: 100px 10%;
