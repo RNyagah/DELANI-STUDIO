@@ -164,7 +164,7 @@ body{
     text-align: justify;
 }
 .col-sm-3:hover{
-    background-size: 
+    background-size: 0pt;
 }
 .col-sm-3:after{
     position: absolute;
