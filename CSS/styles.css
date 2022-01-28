@@ -63,9 +63,7 @@ body{
 .we-do{
     text-align: center;
     padding-top: 40px;
-    /* padding-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px; */
+
 }
 .PortF1{
     text-align: center;
@@ -89,7 +87,6 @@ body{
     height: calc(300px - 80px);
     float: left;
     margin: 15px;
-    /* box-sizing: border-box; */
     overflow: hidden;
     border-radius: 10px;
 }
