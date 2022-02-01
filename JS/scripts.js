@@ -2,8 +2,8 @@
 $(document).ready(function(){
     
 
-  $(".btn_1").click(function(){
-      $(".p.par_1").hide();
+  $(".design").click(function(){
+      $(".p").hide();
       $(".btn_1").show(); 
   });
    $(".btn_2").click(function(){
