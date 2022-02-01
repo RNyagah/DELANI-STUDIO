@@ -2,9 +2,9 @@
 $(document).ready(function(){
     
 
-  $(".btn_1").click(function(){
-      $(".btn_1").hide();
-      $(".btn_1").show(); 
+  $(".btn_2").click(function(){
+      $(".btn_2").hide();
+      $(".btn_2").show(); 
   });
    $(".btn_2").click(function(){
        $("p.par_2").show();   
