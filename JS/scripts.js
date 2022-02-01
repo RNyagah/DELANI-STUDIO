@@ -1,10 +1,7 @@
 
 $(document).ready(function(){
     
-  $(".btn_1").click(function(){ 
-      $("p.par_1").show();
-      $(".btn_1").hide(); 
-  });
+
   $("p.par_1").click(function(){
       $("p.par_1").hide();
       $(".btn_1").show(); 
