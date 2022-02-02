@@ -2,7 +2,7 @@
 $(document).ready(function(){
     
 
-  $(".we-do").click(function(){
+  $(".col-md-4").click(function(){
       $(".p.par_1").hide();
       $(".btn_1").show(); 
   });
@@ -10,7 +10,7 @@ $(document).ready(function(){
        $("p.par_2").show();   
        $(".btn_2").hide();
    });
-   $("p.par_2").click(function(){
+   $(".p.pa2").click(function(){
        $("p.par_2").hide();
        $(".btn_2").show();
    });
