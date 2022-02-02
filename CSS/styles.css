@@ -1,200 +1,301 @@
 
-body{
-    margin: auto;
-    box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=STIX+Two+Math&display=swap" rel="stylesheet');
+html{
+  scroll-behavior: smooth;
 }
-.content{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
+
+.backg{
+    background-image: url('../IMAGES/backgrounds/h_img.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 18%;
+    font-family: 'Abril Fatface', cursive;
 }
-.h_image{
-    background-image: url("../IMAGES/backgrounds/h_img.jpg");
-    height:700px; 
-     
-}
+
 #logo{
-    text-align-last: center;
-    padding-top: 200px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 70px;
+    height: 70px;
+}
+#click{
+    padding-top: 22px;
+    margin-top: 10px;
     padding-bottom: 30px;
-
-}
-.banner1,.banner2 { 
-    text-align: center;
-    color: white;
-}
-.banner2 {
-    padding-bottom: 120px;
 }
 
-#mouse_click{
-    text-align: center;
-    padding: 30px;
-    margin-top: 30px;
-    margin-bottom: 5px;
+#click{
+    animation: bounce 3s infinite;
 }
-.About{
-    text-align: center;
-    height: 300px;
-    padding: 30px;
-    line-height: 200%;
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-45px);
+    }
+    60%{
+        transform: translateY(-45px);
+    }
 }
-.s_image{
-    background-image: url("../IMAGES/backgrounds/s_image.jpg");
-    height: 350px;
-    padding-top: 100px;
-    line-height: 200%; 
-}
-.banner2-1,.banner2-2 {
-    text-align: center; 
-    color: white;
 
-}
-.row{
-    text-align: center;
-    
-}
-.What-we-do{
-    display: inline;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 150px;
-}
-.we-do{
+.about{
     text-align: center;
     padding-top: 40px;
-    /* padding-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px; */
+    padding-bottom: 30px;
+    font-family: 'STIX Two Math', serif;
 }
-.PortF1{
+#about{
+    font-size: 16px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.service{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    background-image: url("../IMAGES/backgrounds/s_image.jpg");
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'STIX Two Math', serif;
+    font-size: 17px;
 }
-.container{
+#services{
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.business{
+    font-family: 'STIX Two Math', serif;
     text-align: center;
-    position: center;
-    width: 1200px;
-    height: 280px;
-    margin: 300px, auto;
-    background: white;
+    padding-top: 40px;
 }
-.container .box {
-    position: relative;
-    display: block;
-    width: calc(400px - 60px);
-    height: calc(300px - 80px);
-    float: left;
-    margin: 15px;
-    /* box-sizing: border-box; */
-    overflow: hidden;
-    border-radius: 10px;
+.business .header{
+    padding-bottom: 38px;
 }
-.container .box .icon{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    height: 40%;
-    transition: 0.5s;
-    background: rgba(0, 0, 0, 0);
-}
-.container .box .icon .btn_1{
-    background: rgba(0, 0, 0, 0);
-    float: inherit;
-}
-.container .box .icon .btn_2{
-    background: rgba(0, 0, 0, 0);
-}
-.container .box .icon .btn_3{
-    background: rgba(0, 0, 0, 0);
-}
-.container .box .par_1{
-    display: none; 
-    font-size: 15px;
-}
-.container .box .par_2{
+#prod, #dev, #design{
     display: none;
-    font-size: 15px;
+    font-family: 'STIX Two Math', serif;
+    font-size: 18px;
 }
-.container .box .par_3{
-    display: none;
-    font-size: 15px;
+#prod .flair, #dev .flair, #design .flair{
+    font-size: 24px;
+    font-weight: 600;
 }
-
-.container{
-    position: relative;
-    text-align: left;
-    box-sizing: border-box;
+.flair{
+    padding: 6px;
 }
 
-.Portfolio{
-    padding: 20px;
-    text-align: center;
-}
- .row1{
+#portf{
     display: flex;
-    box-sizing: border-box;
-    padding: 30px,50px, 10px,20px;
-    border: 20px, 30px, 20px, 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 6%;
+    margin-right: 10%;
+}
+.col-md-3 img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 400px;
     margin: 20px;
-    text-align: start;
-      
-} 
-
-.PortF1{
-    padding: 20px, 20px, 20px, 20px;
 }
- .col-sm-3{
-    display: inline;
-    width: 33.33%;
-    padding: 10px;
-    transition: 0.5s;
-    
-}
-.row2{
-    display: flex;
-    box-sizing: border-box;
-    padding: 30px,50px, 10px,20px;
-    border: 20px, 30px, 40px,30px;
-    margin: 20px;
-    text-align: justify;
-}
-.col-sm-3:hover{
-    background-size: 0pt;
-}
-.col-sm-3:after{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    content:attr(data-text);
-    transition: 0.5s;
-}
-.col-sm-3:hover:after{
-    opacity: 1;
-}
-
-.contact_us{
-    background-image: url("../IMAGES/backgrounds/c_image.jpg");
-    height: 450px;
+.portf{
     text-align: center;
+    padding-top: 40px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.cont{
+    background-image: url('../IMAGES/backgrounds/c_image.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
 }
-form{
-    background: rgba(0, 0, 0, 0);
-}
-.social_icons{
+.cont h1{
     text-align: center;
-    padding: 20px;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: 'STIX Two Math', serif;
 }
-.txtb{
-    background: rgba(0, 0, 0, 0);
+form{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding-top: 2%;
 }
-.contact_us .txtb label, input, textarea{
-    display: inline-block;
+form input, #comment{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+    
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#name, #email{
+    width: 47%;
+    margin-bottom: 1.5%;
+    margin-right: 1%;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+#comment{
+    width: 93%;
+    margin-left: 2% ;
+    background-color: transparent;
+    height: 300px;
+    border: 2px solid white;
+}
+
+::placeholder{
+    color: white;
+}
+
+.submit{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+  footer{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Abril Fatface', cursive;
+  }
+  footer p{
+    margin-top: 10px;
+  }
+   footer img:hover{
+    animation: wobble 3s infinite;
+}
+
+@keyframes wobble {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(10);
+    }
+    10% {
+      transform: translateY(-10px);
+    }
+    20% {
+      transform: translateY(-10px);
+    }
+}
+
+
+
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+         display: none;
+         color: black;
+         width: 100%;
+         height: 100%;
+         background-color:rgba(255, 255, 255, 0.456);
+         position: relative;
+         top: 20px;
+         left: 35px;
+         font-weight: bold; 
+         text-align: center;
+         font-size: 25px;
+         padding-top: 50%;
+         font-family: 'Abril Fatface', cursive;
+} 
+
+@media only screen and (max-width: 755px){
+    #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+        width: 100%;
+        height: 100%;
+        top: 20px;
+        left: 16px;
+        padding-top: 20%;
+    }
+    .col-md-3 img{
+        width: 100%px;
+        margin: 20px;
+    }
+    #portf{
+        margin-left: 8%;
+        margin-right: 16%;
+    }
+    button{
+        margin-left: 2%;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+    }
 
 }
+@media only screen and (max-width: 425px){
+    #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+        width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 16px;
+    padding-top: 20%;
+    font-size: 20px;
+    }
+    .col-md-3 img{
+        width: 100%px;
+        margin: 20px;
+    }
+    #portf{
+        margin-left: 8%;
+        margin-right: 16%;
+    }
+    button{
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+    }
+  
+    #comment{
+        margin-left: 4%;
+        width: 84%;
+    }
+
+}
+@media only screen and (min-width: 825px){
+    #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+        width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    padding-top:30%;
+    }
+    .col-md-3 img{
+        width: 400px;
+        margin: 20px;
+      }
+    #portf{
+        margin-left:10%;
+        margin-right: 10%; 
+    }
+}
+@media only screen and (min-width: 625px){
+    #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+        width: 100%;
+        height: 100%;
+        top: 20px;
+        left: 20px;
+        padding-top:20%; 
+        font-size: 26px;
+    }
+    .col-md-3 img{
+        width: 400px;
+        margin: 20px;
+      }
+    #portf{
+    margin-left:6%;
+    margin-right: 10%; 
+    }
+
+}
+
+
